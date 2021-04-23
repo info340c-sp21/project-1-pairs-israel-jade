@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://info340c-sp21.github.io/project-1-proposal-jadedsouza/sitemap.xml
