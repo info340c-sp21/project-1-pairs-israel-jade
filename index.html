@@ -1,12 +1,7 @@
-<!--Raymond: My job was UI and overall structure of the website. I also did some work on integrating the SoundCloud API to the DOM. -->
-<!--Kevin: My job was to leverage the CocktailDB API and use it to power our search engine. I also did some work integrating the search js into the DOM-->
-<!--Collin: My job was to utilize the Soundclouod API and get it to output data; eg. Song Audio, Album cover, title, and artist of song based on the drink generated. -->
-<!--Harbans: My job was to integrate the search API and push instructions onto DOM. -->
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Drinking Decisions</title>
+	<title>Drinking Choices</title>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/20.1.2/jcanvas.js"></script>
@@ -215,7 +210,7 @@ $(".martini-box").on('click', function(){
 
 //INGREDIENTS PAGE FUNCTIONALITY
 //Ingredients array to be pushed to API for random recipe
-var finalIngredients = []; //Ask kevin wut the array should b called
+var finalIngredients = []; 
 var ingredientsCounter = 0;
 //Dummy code
 var dummyInstructionsArray = [];
@@ -319,7 +314,6 @@ $('.side-list').on('click','.delete', function(){
 });
 
 $('.ingredients-confirm').on('click','.shaker',function(){
-// KEVINS FUNCTIONALITY - START
 	$("#insList").empty(); // to clear DOM data related to previous drink
 	$('.instructions-list').empty(); // to clear DOM data related to previous drink
 	$("#mesList").empty(); // to clear DOM data related to previous drink
