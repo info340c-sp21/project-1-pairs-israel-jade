@@ -6,7 +6,7 @@ html{
 
 body{
 	/*Color grey for debug*/
-	background-color: black; 
+	background-color:#202427; 
 	/*background-color: #D3D3D3;*/
   font-family: 'Poppins', sans-serif;
 	color:white;
@@ -111,12 +111,12 @@ h3{
 }
 
 h3 span:nth-child(2){
-	color:#5433f7; purple
+	color:#58e5e1; purple
 }
 
 .button{
-	border-radius: 25px;
-	background-color: #5433f7;
+	border-radius: 50px;
+	background-color: #58e5e1;
 	border: none;
 	padding: 10px 20px;
 	font-family: 'Poppins', sans-serif;
@@ -128,7 +128,7 @@ h3 span:nth-child(2){
 }
 
 .martini{
-	width:100px;
+	width:200px;
 }
 
 .whoosh{
@@ -163,7 +163,7 @@ h3 span:nth-child(2){
 header.head{
 	/*Display for debug*/
 	display: none;
-	background-color: rgba(36,36,36,0.7);
+	/*background-color: rgba(32,36,39,0.7);*/
 	height: 150px;
 	width: 100;%
 }
@@ -393,10 +393,11 @@ a.closebtn{
 }
 
 .green{
-	background-color: rgba(14, 226, 65, 0.7);
+	background-color: #292f33;
 	/*Display none for debug*/
 	/*display: none;*/
 	left:-300px;
+	color:#68b4fc;
 }
 
 .ingredients-side{
@@ -409,13 +410,16 @@ a.closebtn{
 
 .sidebox{
 	font-family: 'Permanent Marker', cursive;
-	color:#0EE241;
+	color:white;
 	font-size: 20pt;
-	background-color: rgba(0, 0, 0, 0.3);
-	width:100%;
-	height: 500px;
+	background-color: #202427;
+	border-radius: 20px;
+	width:90%;
+	height: 100px;
 	margin-top: 7px;
+	margin-right: 7px; 
 	overflow:auto;
+
 }
 
 .side-list li{
@@ -524,7 +528,7 @@ a.closebtn{
 }
 
 #ingredients-input{
-	color:#5433f7;
+	color:#292f33;
 	font-size: 14pt;
 	margin-top:10px;
 	width:96%;
@@ -534,8 +538,8 @@ a.closebtn{
 }
 
 #ingredients-input:focus{
-	border:1px solid #5433f7;
-	box-shadow: 0 0 10px #5433f7;
+	border:1px solid #68b4fc;
+	box-shadow: 0 0 5px #68b4fc ;
 }
 
 label.main-title{
@@ -561,12 +565,12 @@ label.main-title{
 .ingredients-choices::-webkit-scrollbar-track, .sidebox::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(41, 47, 51, 1);
 	border-radius: 10px;
 }
 
 .ingredients-choices::-webkit-scrollbar-thumb, .sidebox::-webkit-scrollbar-thumb {
- background: #595959; 
+ background: #292f33; 
  border-radius: 10px;
  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -575,7 +579,7 @@ li a{
 	display:block;
 	margin:0 auto;
 	text-align: center;
-	color:#0EE241;
+	color:#292f33;
 	cursor: pointer;
 	font-size: 20pt;
 	padding:10px;
@@ -596,7 +600,7 @@ li a:hover{
 }
 
 @keyframes fadeinText {
-  from { color: #0EE241 }
+  from { color:#292f33 }
   to   { color: navajowhite }
 }
 
@@ -657,8 +661,10 @@ h2{
 .howdothis{
 	margin-top: 75px;
 	padding:20px;
-	background-color: rgba(0,0,0,0.5);
+	background-color:#292f33;
+;
 	transition: 0.5s;
+	border-radius: 20px;
 	/*word-wrap: break-word; Allows unbreakable words to be broken*/
 }
 
@@ -709,8 +715,9 @@ h2{
 
 /*Instructions Page*/
 .blue{
-	background-color: rgba(46, 186, 254, 0.7);
+	background-color: #292f33;
 	left:-300px;
+	color:#d185d6;
 
 }
 
@@ -728,12 +735,13 @@ h2{
 .instructions-list{
 	width: 100%;
   height: 400px;
-	background-color: rgba(0,0,0,0.5);;
+	background-color:#292f33;
 	padding:30px 0 0 45px;
 	margin-top: 10px;
 	font-size: 20pt;
 	word-wrap: break-word;
 	overflow:auto;
+	border-radius:20px;
 }
 
 .next-step{
@@ -854,8 +862,9 @@ h2{
   transform: rotate(-90deg);
   position: absolute;
   top: 460px;
-	right: -345px;
+  right: -345px;
   z-index: 0;
+  color:#68b4fc;
 	
 	/*Diplay none for debug*/
   /*display:none;*/
@@ -867,8 +876,8 @@ h2{
 	max-width:33%;
 	width:33%;
 	right: -51px;
-  top: 198px;
-	background-color: rgba(14, 226, 65, 0.7);
+  	top: 198px;
+	background-color:#292f33;
 	display: none;
 }
 
@@ -879,8 +888,9 @@ h2{
 	width:33%;
   right: -51px;
   top: 393px;
-	background-color: rgba(46, 186, 254, 0.7);
+	background-color:#292f33;
 	display: none;
+	color:#d185d6;
 }
 
 .results-mini{
