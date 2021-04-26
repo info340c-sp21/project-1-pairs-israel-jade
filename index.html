@@ -339,35 +339,7 @@ $('.ingredients-confirm').on('click','.shaker',function(){
 
 		currentColor = "purple";
 	});
-
-	//Right side panel functionality
-	$('.ingredients-mini').on('click',function(){
-
-		if (currentColor === "blue"){
-			$('.instructions-box').fadeOut(400, function(){
-				$('.ingredients-box').fadeIn(400);
-			});
-
-			$('.blue').animate({left: '-300px'},400, function(){
-				$('.green').animate({left: '0px',},400);
-			});
-		}
-
-		else if (currentColor === "purple"){
-			$('.cheers-box').fadeOut(400, function(){
-				$('.ingredients-box').fadeIn(400);
-			});
-
-			$('.purple').animate({left: '-300px'},400, function(){
-				$('.green').animate({left: '0px',},400);
-			});
-		}
-
-		currentColor = "green";
-		console.log('Color is now: ' + currentColor);
-	});
-
-
+	
 	$('.instructions-mini').on('click',function(){
 
 		if (currentColor === "green"){
