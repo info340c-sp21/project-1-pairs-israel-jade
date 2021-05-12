@@ -12,6 +12,10 @@ body{
 	color:white;
 }
 
+select {
+	color: #202427;
+}
+
 
 /*Landing Page*/
 video.background{
@@ -111,7 +115,7 @@ h3{
 }
 
 h3 span:nth-child(2){
-	color:#58e5e1; purple
+	color:#58e5e1;
 }
 
 .button{
@@ -165,7 +169,7 @@ header.head{
 	display: none;
 	/*background-color: rgba(32,36,39,0.7);*/
 	height: 150px;
-	width: 100;%
+	width: 100;
 }
 
 .top-logo{

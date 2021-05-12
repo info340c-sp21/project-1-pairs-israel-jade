@@ -3,7 +3,7 @@
 <head>
 	<title>Drink Choices</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="author" content="Jade D'Souza and Sherry Zhang">
+	<meta name="author" content="Jade D'Souza and Israel Martinez">
 	<link rel="icon" 
       type="image/png" 
       href="/assets/media/technologist.png" />
@@ -54,13 +54,28 @@
 		<div class='container-fluid ingredients-box'>
 			<div class="row">
 				<div class="col-lg-9">
-					<label class="main-title">Describe Your Day:</label>
-					<input type="text" class="form-control" id="ingredients-input" placeholder="Describe your day with at least 2 inspirations">
-					<div class='ingredients-choices'>
+					<form>
+						<label for="moods" class="main-title">How are you feeling today?</label><br>
+						<select name="moods" id="moods">
+							<option disabled selected value>-- select a mood --</option>
+						</select><br>
+						<br>
+						<label for="types" class="main-title">What kind of drink?</label><br>
+						<select name="types" id="types">
+							<option disabled selected value>-- select a type --</option>
+						</select><br>
+						<br>
+						<input type="submit" value="Submit" style="color: #202427;">
+					</form>
+					<!-- <div class='ingredients-choices'>
 						<ul class='choices'></ul>
-					</div>
+						<p>ingredients</p>
+					</div> -->
 
 				</div>
+
+			</div>
+			<div class="row">
 				<!--How to Do Section-->
 				<!-- Exact -->
 				<div class="col-lg-3">
@@ -81,7 +96,6 @@
 				</div>
 				<!-- Width: 363px Height: 444px -->
 				<!-- Top 263px Right: ???-1740px -->
-
 			</div>
 		</div>
 
@@ -92,7 +106,7 @@
 				<div class="title">Chosen feelings of your day</div>
 				<img src="./assets/media/cocktail_shaker.png" class="shaker">
 				<div class="sidebox">
-					<ul class='side-list'></ul>
+					<ul class='side-list' id='answer-list'></ul>
 				</div>
 				<div class="ingredients-confirm">
 				</div>
@@ -174,14 +188,14 @@
 	</div>
 
 
-
+	
 	<script type="text/javascript">
 
 //Logo to landing page functionality
 setTimeout(function(){
-	$('.landing-text').fadeIn(800);
-	$('canvas').fadeOut(800);
-	$('.background').fadeIn(800);
+	$('.landing-text').fadeIn(400);
+	$('canvas').fadeOut(400);
+	$('.background').fadeIn(400);
 },2500);
 
 var currentColor = "";
@@ -381,7 +395,7 @@ $(document).on("click", ".listed-drink",function() {
 	console.log(displayDrink);
 	getRecipe(displayDrink);
 });
-
 </script>
+<script src="javascript/searchLogic.js"></script>
 </body>
 </html>
