@@ -935,14 +935,6 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
-	.sidebar{
-		position:fixed;
-		top:0;
-		left:0;
-		width:50px;
-		height:50%;
-		overflow:hidden;
-	}
 }
 @media (max-width: 768px)
 {
@@ -967,14 +959,6 @@ h2{
 
 	.landing-text {
 		font-size: 15pt;
-	}
-	.sidebar{
-		position:fixed;
-		top:0;
-		left:0;
-		width:50px;
-		height:50%;
-		overflow:hidden;
 	}
 }
 
@@ -1002,14 +986,6 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
-	.sidebar{
-		position:fixed;
-		top:0;
-		left:0;
-		width:50px;
-		height:50%;
-		overflow:hidden;
-	}
 }
 
 @media (max-width: 1200px)
@@ -1035,13 +1011,5 @@ h2{
 
 	.landing-text {
 		font-size: 15pt;
-	}
-	.sidebar{
-		position:fixed;
-		top:0;
-		left:0;
-		width:50px;
-		height:50%;
-		overflow:hidden;
 	}
 }
