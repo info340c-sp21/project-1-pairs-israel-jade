@@ -21,11 +21,29 @@ select {
     label.main-title{
 		font-size: 15pt;
 	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
 }
 @media (min-width: 768px)
 {
     label.main-title{
 		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
 	}
 }
 /*Landing Page*/
