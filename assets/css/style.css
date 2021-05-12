@@ -19,13 +19,13 @@ select {
 @media (min-width: 598px)
 {
     label.main-title{
-		font-size: 20;
+		font-size: 15pt;
 	}
 }
 @media (min-width: 768px)
 {
     label.main-title{
-		font-size: 20;
+		font-size: 15pt;
 	}
 }
 /*Landing Page*/
