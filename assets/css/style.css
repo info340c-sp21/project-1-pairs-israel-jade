@@ -911,7 +911,7 @@ h2{
 }
 
 
-@media (min-width: 598px)
+@media (max-width: 598px)
 {
     label.main-title{
 		font-size: 15pt;
@@ -935,8 +935,16 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100px;
+		height:100%;
+		overflow:hidden;
+	}
 }
-@media (min-width: 768px)
+@media (max-width: 768px)
 {
     label.main-title {
 		font-size: 15pt;
@@ -962,7 +970,7 @@ h2{
 	}
 }
 
-@media (min-width: 992px)
+@media (max-width: 992px)
 {
 	label.main-title {
 		font-size: 15pt;
@@ -988,7 +996,7 @@ h2{
 	}
 }
 
-@media (min-width: 1200px)
+@media (max-width: 1200px)
 {
 	label.main-title {
 		font-size: 15pt;
