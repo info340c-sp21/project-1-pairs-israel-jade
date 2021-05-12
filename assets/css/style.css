@@ -911,7 +911,7 @@ h2{
 }
 
 
-@media (min-width: 598px)
+@media (max-width: 598px)
 {
     label.main-title{
 		font-size: 15pt;
@@ -936,7 +936,7 @@ h2{
 		font-size: 15pt;
 	}
 }
-@media (min-width: 768px)
+@media (max-width: 768px)
 {
     label.main-title {
 		font-size: 15pt;
@@ -945,7 +945,6 @@ h2{
 		font-size: 15pt;
 	}
 	header.head{
-		/*Display for debug*/
 		display: none;
 		/*background-color: rgba(32,36,39,0.7);*/
 		height: 150px;
