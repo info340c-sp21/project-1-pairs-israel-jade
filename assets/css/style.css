@@ -16,7 +16,18 @@ select {
 	color: #202427;
 }
 
-
+@media (min-width: 598px)
+{
+    label.main-title{
+		font-size: 20;
+	}
+}
+@media (min-width: 768px)
+{
+    label.main-title{
+		font-size: 20;
+	}
+}
 /*Landing Page*/
 video.background{
 	display:none;
@@ -91,23 +102,6 @@ h1{
 	color:white;
 	font-size:13pt;
 }
-
-/*h1 span:nth-child(1){
-	color:#2EBAFE; blue
-}
-
-h1 span:nth-child(2){
-
-}
-
-h1 span:nth-child(3){
-		color:#0EE241; green
-}
-
-h1 span:nth-child(4){
-	color:#5433f7; purple
-}
-*/
 
 h3{
 	font-family: 'Permanent Marker', cursive;
