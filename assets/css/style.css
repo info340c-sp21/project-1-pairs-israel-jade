@@ -919,6 +919,13 @@ h2{
 	.drinkingchoices {
 		font-size: 15pt;
 	}
+	header.head{
+		/*Display for debug*/
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
 	.top-logo{
 		position: fixed;
 		top:0;
@@ -931,11 +938,18 @@ h2{
 }
 @media (min-width: 768px)
 {
-    label.main-title{
+    label.main-title {
 		font-size: 15pt;
 	}
 	.drinkingchoices {
 		font-size: 15pt;
+	}
+	header.head{
+		/*Display for debug*/
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
 	}
 	.top-logo{
 		position: fixed;
