@@ -911,7 +911,7 @@ h2{
 }
 
 
-@media (max-width: 598px)
+@media (min-width: 598px)
 {
     label.main-title{
 		font-size: 15pt;
@@ -936,7 +936,7 @@ h2{
 		font-size: 15pt;
 	}
 }
-@media (max-width: 768px)
+@media (min-width: 768px)
 {
     label.main-title {
 		font-size: 15pt;
@@ -956,6 +956,59 @@ h2{
 		left: 350px;
 		font-size:15pt;
 	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+}
+
+@media (min-width: 992px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+}
+
+@media (min-width: 1200px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+
 	.landing-text {
 		font-size: 15pt;
 	}
