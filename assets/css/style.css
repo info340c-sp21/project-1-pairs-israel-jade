@@ -1,3 +1,4 @@
+
 html{
 	 background-size: cover;
 	 overflow-x: hidden;
@@ -16,39 +17,6 @@ select {
 	color: #202427;
 }
 
-@media (min-width: 598px)
-{
-    label.main-title{
-		font-size: 15pt;
-	}
-	.drinkingchoices {
-		font-size: 15pt;
-	}
-	.top-logo{
-		position: fixed;
-		top:0;
-		left: 350px;
-		font-size:1 5pt;
-	}
-	.landing-text {
-		font-size: 15pt;
-	}
-}
-@media (min-width: 768px)
-{
-    label.main-title{
-		font-size: 15pt;
-	}
-	.drinkingchoices {
-		font-size: 15pt;
-	}
-	.top-logo{
-		position: fixed;
-		top:0;
-		left: 350px;
-		font-size:15pt;
-	}
-}
 /*Landing Page*/
 video.background{
 	display:none;
@@ -940,4 +908,42 @@ h2{
 @keyframes rightsidewhooshywhoosh{
 	from{  }
 	to{  }
+}
+
+
+@media (min-width: 598px)
+{
+    label.main-title{
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:1 5pt;
+	}
+	.landing-text {
+		font-size: 15pt;
+	}
+}
+@media (min-width: 768px)
+{
+    label.main-title{
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+	.landing-text {
+		font-size: 15pt;
+	}
 }
