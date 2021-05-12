@@ -28,7 +28,10 @@ select {
 		position: fixed;
 		top:0;
 		left: 350px;
-		font-size:15pt;
+		font-size:1 5pt;
+	}
+	.landing-text {
+		font-size: 15pt;
 	}
 }
 @media (min-width: 768px)
