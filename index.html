@@ -96,8 +96,6 @@
 						<h3 class="ingredients-switcher buy-click">Exact Ingredients.<div class="is-line1"></div><div class="is-line2"></div></h3>
 					</div>
 				</div>
-				<!-- Width: 363px Height: 444px -->
-				<!-- Top 263px Right: ???-1740px -->
 			</div>
 		</div>
 
@@ -233,7 +231,6 @@ $(".martini-box").on('click', function(){
 		$('.green').animate({left: '0px',},400);
 		$('.ingredients-box').fadeIn(400);
 		$('.ingredients-mini').fadeIn(400);
-			// $('.smaller-logo').fadeIn(400);
 		});
 
 	currentColor = "green";
@@ -248,7 +245,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-300px'},400, function(){
+			$('.blue').animate({left: '-50px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -258,7 +255,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-300px'},400, function(){
+			$('.purple').animate({left: '-50px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -275,7 +272,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.green').animate({left: '-300px'},400, function(){
+			$('.green').animate({left: '-50px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -285,7 +282,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-300px'},400, function(){
+			$('.purple').animate({left: '-50px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -302,7 +299,7 @@ $(".martini-box").on('click', function(){
 			});
 
 
-			$('.green').animate({left: '-300px'},400, function(){
+			$('.green').animate({left: '-50px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		}
@@ -312,7 +309,7 @@ $(".martini-box").on('click', function(){
 				$('.cheers-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-300px'},400, function(){
+			$('.blue').animate({left: '-50px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		};
@@ -392,7 +389,7 @@ $('.random').on('click', function(){
     	$('.instructions-list').empty();
     	$("#mesList").empty();
     	$("#drinkImg").empty();
-		$('.green').animate({ left: '-300px'},400, function(){
+		$('.green').animate({ left: '-50px'},400, function(){
 			$('.blue').animate({ left: '0px'},400)
 		randomDrink();
 		});//can put callback function after linear
