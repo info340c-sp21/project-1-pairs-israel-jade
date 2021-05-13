@@ -974,13 +974,7 @@ h2{
 		font-size: 18pt;
 		width:149px;
 	}
-	.suggestion-side{
-		position:absolute;
-		top:85px;
-		left:10px;
-		font-size: 18pt;
-		width:149px;
-	}
+
 	.sidebox{
 		font-family: 'Permanent Marker', cursive;
 		color:white;
