@@ -543,7 +543,7 @@ a.closebtn{
 }
 
 label.main-title{
-	font-size: 31pt;
+	font-size: 15pt;
 }
 
 .ingredients-choices{
@@ -662,10 +662,8 @@ h2{
 	margin-top: 75px;
 	padding:20px;
 	background-color:#292f33;
-;
 	transition: 0.5s;
 	border-radius: 20px;
-	/*word-wrap: break-word; Allows unbreakable words to be broken*/
 }
 
 .ingredients-switcher{
@@ -961,24 +959,18 @@ h2{
 		color:#68b4fc;
 	}
 
-	.blue{
-		background-color: #292f33;
-		left:-150px;
-		color:#d185d6;
-	
-	}
 	.ingredients-side{
 		position:absolute;
 		top:85px;
 		left:10px;
-		font-size: 18pt;
+		font-size: 10pt;
 		width:149px;
 	}
 
 	.sidebox{
 		font-family: 'Permanent Marker', cursive;
 		color:white;
-		font-size: 20pt;
+		font-size: 40pt;
 		background-color: #202427;
 		border-radius: 10px;
 		width:90%;
@@ -1002,8 +994,41 @@ h2{
 	.top-logo{
 		position: fixed;
 		top:0;
-		left: 160px;
+		left: 180px;
 		font-size:15pt;
+	}
+
+	.blue{
+		background-color: #292f33;
+		left:-300px;
+		width: 160px;
+		font-size:40pt;
+		color:#d185d6;
+	
+	}
+	.instructions-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 40px;
+		left: 180px;
+		width:50%;
+		/*Display none for debug*/
+		display: none;
+	}
+	.suggestion-side {
+		position:absolute;
+		top: 400px;
+		left:20px;
+		height: 600px;
+		font-size: 18pt;
+		width:150px;
+	}
+	
+	#suggestion-form {
+		font-size: 10pt;
+		margin:1em;
+		height: 600px;
 	}
 }
 @media (min-width: 768px)
@@ -1057,19 +1082,12 @@ h2{
 		left:-300px;
 		color:#68b4fc;
 	}
-	.blue{
-		background-color: #292f33;
-		/*Display none for debug*/
-		/*display: none;*/
-		left:-300px;
-		color:#68b4fc;
-	}
 	
 	.ingredients-side{
 		position:absolute;
 		top:160px;
 		left:20px;
-		font-size: 18pt;
+		font-size: 15pt;
 		width:280px;
 	}
 	
@@ -1085,6 +1103,38 @@ h2{
 		margin-right: 7px; 
 		overflow:auto;
 	
+	}
+
+
+	.blue{
+		background-color: #292f33;
+		left:-300px;
+		width: 300px;
+		font-size:40pt;
+		color:#d185d6;
+	
+	}
+	.instructions-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 40px;
+		left: 310px;
+		width:50%;
+		/*Display none for debug*/
+		display: none;
+	}
+	.suggestion-side {
+		position:absolute;
+		top: 400px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	#suggestion-form {
+		font-size: 10pt;
+		margin:1em;
 	}
 }
 
@@ -1105,7 +1155,7 @@ h2{
 	.top-logo{
 		position: fixed;
 		top:0;
-		left: 350px;
+		left: 300px;
 		font-size:50pt;
 	}
 
