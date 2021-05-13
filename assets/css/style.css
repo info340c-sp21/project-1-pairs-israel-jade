@@ -374,7 +374,7 @@ a.closebtn{
 	position:fixed;
 	top:0;
 	left:0;
-	width:300px;
+	width:50px;
 	height:100%;
 	overflow:hidden;
 }
@@ -392,7 +392,20 @@ a.closebtn{
 	top:160px;
 	left:20px;
 	font-size: 18pt;
+	width:50px;
+}
+
+.suggestion-side {
+	position:absolute;
+	top: 400px;
+	left:20px;
+	font-size: 18pt;
 	width:280px;
+}
+
+#suggestion-form {
+	font-size: 12pt;
+	margin:1em;
 }
 
 .sidebox{
@@ -402,7 +415,7 @@ a.closebtn{
 	background-color: #202427;
 	border-radius: 20px;
 	width:90%;
-	height: 100px;
+	height: 175px;
 	margin-top: 7px;
 	margin-right: 7px; 
 	overflow:auto;
@@ -837,11 +850,6 @@ h2{
 }
 
 
-
-
-
-
-
 .right-panel{
   width: 700px;
   font-size: 20pt;
@@ -919,6 +927,13 @@ h2{
 	.drinkingchoices {
 		font-size: 15pt;
 	}
+	header.head{
+		/*Display for debug*/
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
 	.top-logo{
 		position: fixed;
 		top:0;
@@ -928,22 +943,295 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
+
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:150px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-150px;
+		color:#68b4fc;
+	}
+
+	.blue{
+		background-color: #292f33;
+		left:-150px;
+		color:#d185d6;
+	
+	}
+	.ingredients-side{
+		position:absolute;
+		top:85px;
+		left:10px;
+		font-size: 18pt;
+		width:149px;
+	}
+	.suggestion-side{
+		position:absolute;
+		top:85px;
+		left:10px;
+		font-size: 18pt;
+		width:149px;
+	}
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 10px;
+		width:90%;
+		height: 100px;
+		margin-top: 3px;
+		margin-right: 3px; 
+		overflow:auto;
+
+	}
+	/*Ingredients List Generator*/
+	.ingredients-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 40px;
+		left: 160px;
+		width:75%;
+		/*Display block for debug*/
+		display: none;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 160px;
+		font-size:15pt;
+	}
 }
 @media (min-width: 768px)
 {
-    label.main-title{
+	label.main-title {
 		font-size: 15pt;
 	}
 	.drinkingchoices {
 		font-size: 15pt;
 	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 310px;
+		font-size:20pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.ingredients-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 40px;
+		left: 310px;
+		width:75%;
+		/*Display block for debug*/
+		display: none;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	.blue{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
+	}
+}
+
+@media (min-width: 992px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
 	.top-logo{
 		position: fixed;
 		top:0;
 		left: 350px;
-		font-size:15pt;
+		font-size:50pt;
 	}
+
 	.landing-text {
 		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	.blue{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
+	}
+}
+
+@media (min-width: 1200px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:50pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	.blue{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
 	}
 }

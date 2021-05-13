@@ -22,7 +22,7 @@
 		
 			<div class="landing-text">
 				<h1 class="logo text">
-					<span class='drinkingchoices'>Drink Choices</span>
+					<span class='drinkingchoices'>Drink Choices1</span>
 				</h1>
 				<h3 class="slogan text">
 					<span>Woop Woop!</span><span></span>
@@ -96,8 +96,6 @@
 						<h3 class="ingredients-switcher buy-click">Exact Ingredients.<div class="is-line1"></div><div class="is-line2"></div></h3>
 					</div>
 				</div>
-				<!-- Width: 363px Height: 444px -->
-				<!-- Top 263px Right: ???-1740px -->
 			</div>
 		</div>
 
@@ -158,6 +156,27 @@
 				<div class="sidebox">
 					<ul class='measurements-side-list' id="mesList"></ul>
 				</div>
+			</div><br>
+			<div class="suggestion-side">
+				<div class ="title measurements">Suggest a drink:</div>
+				<div class="sidebox">
+					<!-- new form for users to add suggestions-->
+					<form id="suggestion-form">
+						<label for="drinkSug">What's the name?</label><br>
+						<input type="text" id="drinkSug" name="drinkSug">
+						<label for="moodSug">What mood does this fit?</label><br>
+						<select name="moodSug" id="moodSug">
+							<option disabled selected value>-- select a mood --</option>
+						</select><br>
+						<br>
+						<label for="typeSug">What type of drink?</label><br>
+						<select name="typeSug" id="typeSug">
+							<option disabled selected value>-- select a type --</option>
+						</select><br>
+						<br>
+						<input type="submit" value="Submit" style="color: #202427;">
+					</form>
+				</div>
 			</div>
 		</aside>
 
@@ -212,7 +231,6 @@ $(".martini-box").on('click', function(){
 		$('.green').animate({left: '0px',},400);
 		$('.ingredients-box').fadeIn(400);
 		$('.ingredients-mini').fadeIn(400);
-			// $('.smaller-logo').fadeIn(400);
 		});
 
 	currentColor = "green";
@@ -227,7 +245,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-300px'},400, function(){
+			$('.blue').animate({left: '-50px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -237,7 +255,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-300px'},400, function(){
+			$('.purple').animate({left: '-50px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -254,7 +272,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.green').animate({left: '-300px'},400, function(){
+			$('.green').animate({left: '-50px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -264,7 +282,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-300px'},400, function(){
+			$('.purple').animate({left: '-50px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -281,7 +299,7 @@ $(".martini-box").on('click', function(){
 			});
 
 
-			$('.green').animate({left: '-300px'},400, function(){
+			$('.green').animate({left: '-50px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		}
@@ -291,7 +309,7 @@ $(".martini-box").on('click', function(){
 				$('.cheers-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-300px'},400, function(){
+			$('.blue').animate({left: '-50px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		};
@@ -371,7 +389,7 @@ $('.random').on('click', function(){
     	$('.instructions-list').empty();
     	$("#mesList").empty();
     	$("#drinkImg").empty();
-		$('.green').animate({ left: '-300px'},400, function(){
+		$('.green').animate({ left: '-50px'},400, function(){
 			$('.blue').animate({ left: '0px'},400)
 		randomDrink();
 		});//can put callback function after linear
