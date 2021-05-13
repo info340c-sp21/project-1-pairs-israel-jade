@@ -961,10 +961,11 @@ h2{
 
 	.ingredients-side{
 		position:absolute;
-		top:85px;
+		top:60px;
 		left:10px;
 		font-size: 10pt;
 		width:149px;
+		height: 30px;
 	}
 
 	.sidebox{
@@ -1010,7 +1011,7 @@ h2{
 		position:relative;
 		margin:0;
 		padding:0;
-		top: 40px;
+		top: 5px;
 		left: 180px;
 		width:50%;
 		/*Display none for debug*/
@@ -1029,6 +1030,12 @@ h2{
 		font-size: 10pt;
 		margin:1em;
 		height: 600px;
+	}
+	#sidebox {
+		height:600px;
+	}
+	.sidebox {
+		height: 300px;
 	}
 }
 @media (min-width: 768px)
@@ -1104,7 +1111,15 @@ h2{
 		overflow:auto;
 	
 	}
-
+	.howdothis{
+		margin-top: 5px;
+		padding:20px;
+		background-color:#292f33;
+		transition: 0.5s;
+		border-radius: 15px;
+		margin-right: 50px;
+		width: 200px;
+	}
 
 	.blue{
 		background-color: #292f33;
@@ -1206,6 +1221,16 @@ h2{
 		margin-right: 7px; 
 		overflow:auto;
 	
+	}
+	/*Howdothis Box*/
+	.howdothis{
+		margin-top: 30px;
+		padding:20px;
+		background-color:#292f33;
+		transition: 0.5s;
+		border-radius: 15px;
+		margin-right: 50px;
+		width: 200px;
 	}
 }
 
