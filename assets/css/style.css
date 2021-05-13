@@ -1,3 +1,4 @@
+
 html{
 	 background-size: cover;
 	 overflow-x: hidden;
@@ -15,7 +16,6 @@ body{
 select {
 	color: #202427;
 }
-
 
 /*Landing Page*/
 video.background{
@@ -91,23 +91,6 @@ h1{
 	color:white;
 	font-size:13pt;
 }
-
-/*h1 span:nth-child(1){
-	color:#2EBAFE; blue
-}
-
-h1 span:nth-child(2){
-
-}
-
-h1 span:nth-child(3){
-		color:#0EE241; green
-}
-
-h1 span:nth-child(4){
-	color:#5433f7; purple
-}
-*/
 
 h3{
 	font-family: 'Permanent Marker', cursive;
@@ -938,4 +921,261 @@ h2{
 @keyframes rightsidewhooshywhoosh{
 	from{  }
 	to{  }
+}
+
+
+@media (max-width: 598px)
+{
+    label.main-title{
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		/*Display for debug*/
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:1 5pt;
+	}
+	.landing-text {
+		font-size: 15pt;
+	}
+
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:50px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-50px;
+		color:#68b4fc;
+	}
+
+	.ingredients-side{
+		position:absolute;
+		top:85px;
+		left:10px;
+		font-size: 18pt;
+		width:149px;
+	}
+
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 10px;
+		width:90%;
+		height: 100px;
+		margin-top: 3px;
+		margin-right: 3px; 
+		overflow:auto;
+
+	}
+}
+@media (max-width: 768px)
+{
+    label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:50px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-50px;
+		color:#68b4fc;
+	}
+
+	.ingredients-side{
+		position:absolute;
+		top:85px;
+		left:10px;
+		font-size: 18pt;
+		width:149px;
+	}
+
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 10px;
+		width:90%;
+		height: 100px;
+		margin-top: 3px;
+		margin-right: 3px; 
+		overflow:auto;
+
+	}
+}
+
+@media (max-width: 992px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
+	}
+}
+
+@media (max-width: 1200px)
+{
+	label.main-title {
+		font-size: 15pt;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:15pt;
+	}
+
+	.landing-text {
+		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
+	}
 }
