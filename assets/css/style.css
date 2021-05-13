@@ -955,10 +955,10 @@ h2{
 
 	.ingredients-side{
 		position:absolute;
-		top:160px;
+		top:85px;
 		left:10px;
 		font-size: 18pt;
-		width:280px;
+		width:149px;
 	}
 
 	.sidebox{
@@ -966,11 +966,11 @@ h2{
 		color:white;
 		font-size: 20pt;
 		background-color: #202427;
-		border-radius: 20px;
+		border-radius: 10px;
 		width:90%;
 		height: 100px;
-		margin-top: 7px;
-		margin-right: 7px; 
+		margin-top: 3px;
+		margin-right: 3px; 
 		overflow:auto;
 
 	}
@@ -999,6 +999,44 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:50px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-50px;
+		color:#68b4fc;
+	}
+
+	.ingredients-side{
+		position:absolute;
+		top:85px;
+		left:10px;
+		font-size: 18pt;
+		width:149px;
+	}
+
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 10px;
+		width:90%;
+		height: 100px;
+		margin-top: 3px;
+		margin-right: 3px; 
+		overflow:auto;
+
+	}
 }
 
 @media (max-width: 992px)
@@ -1025,6 +1063,44 @@ h2{
 	.landing-text {
 		font-size: 15pt;
 	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
+	}
 }
 
 @media (max-width: 1200px)
@@ -1050,5 +1126,43 @@ h2{
 
 	.landing-text {
 		font-size: 15pt;
+	}
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:100%;
+		overflow:hidden;
+	}
+	
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-300px;
+		color:#68b4fc;
+	}
+	
+	.ingredients-side{
+		position:absolute;
+		top:160px;
+		left:20px;
+		font-size: 18pt;
+		width:280px;
+	}
+	
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 20pt;
+		background-color: #202427;
+		border-radius: 20px;
+		width:90%;
+		height: 100px;
+		margin-top: 7px;
+		margin-right: 7px; 
+		overflow:auto;
+	
 	}
 }
