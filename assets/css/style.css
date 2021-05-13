@@ -412,6 +412,19 @@ a.closebtn{
 	width:280px;
 }
 
+.suggestion-side {
+	position:absolute;
+	top: 400px;
+	left:20px;
+	font-size: 18pt;
+	width:280px;
+}
+
+#suggestion-form {
+	font-size: 12pt;
+	margin:1em;
+}
+
 .sidebox{
 	font-family: 'Permanent Marker', cursive;
 	color:white;
@@ -419,7 +432,7 @@ a.closebtn{
 	background-color: #202427;
 	border-radius: 20px;
 	width:90%;
-	height: 100px;
+	height: 175px;
 	margin-top: 7px;
 	margin-right: 7px; 
 	overflow:auto;

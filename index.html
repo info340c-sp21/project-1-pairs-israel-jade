@@ -156,6 +156,27 @@
 				<div class="sidebox">
 					<ul class='measurements-side-list' id="mesList"></ul>
 				</div>
+			</div><br>
+			<div class="suggestion-side">
+				<div class ="title measurements">Suggest a drink:</div>
+				<div class="sidebox">
+					<!-- new form for users to add suggestions-->
+					<form id="suggestion-form">
+						<label for="drinkSug">What's the name?</label><br>
+						<input type="text" id="drinkSug" name="drinkSug">
+						<label for="moodSug">What mood does this fit?</label><br>
+						<select name="moodSug" id="moodSug">
+							<option disabled selected value>-- select a mood --</option>
+						</select><br>
+						<br>
+						<label for="typeSug">What type of drink?</label><br>
+						<select name="typeSug" id="typeSug">
+							<option disabled selected value>-- select a type --</option>
+						</select><br>
+						<br>
+						<input type="submit" value="Submit" style="color: #202427;">
+					</form>
+				</div>
 			</div>
 		</aside>
 
