@@ -121,6 +121,7 @@ $('.submit').on('click', function(){
 });
 
 
+// Functions to render a drink
 function randomDrink() {
 	let drinkKeys = Object.keys(DRINKS);
 	let num = Math.floor(Math.random() * drinkKeys.length);
@@ -136,7 +137,6 @@ function randomDrink() {
 	console.log(DRINKS[drinkType][num].mood);
     return renderDrink(drinkType, DRINKS[drinkType][num].mood);
 }
-//console.log(randDrink());
 
 function renderDrink(drinkType, feeling) {
     if (drinkType == 'non-alcoholic') {
