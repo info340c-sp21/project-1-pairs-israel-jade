@@ -111,7 +111,7 @@ FORM.addEventListener('submit', function(event) {
 });
 
 
-function randDrink() {
+function randomDrink() {
 	let drinkKeys = Object.keys(DRINKS);
 	let num = Math.floor(Math.random() * drinkKeys.length);
 	let drinkType = drinkKeys[num];
@@ -126,7 +126,7 @@ function randDrink() {
 	console.log(DRINKS[drinkType][num].mood);
     return renderDrink(drinkType, DRINKS[drinkType][num].mood);
 }
-console.log(randDrink());
+//console.log(randDrink());
 
 function renderDrink(drinkType, feeling) {
     if (drinkType == 'non-alcoholic') {
@@ -147,5 +147,5 @@ function renderDrink(drinkType, feeling) {
 	//match.setAttribute('display', 'inline-block');
 	match.textContent = drink;
 
-    return match;
+    document.querySelector('.instructions-list').appendChild(match);
 }
