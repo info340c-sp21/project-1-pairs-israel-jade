@@ -28,7 +28,6 @@ var moods = [
 	"sad",
 	"excited",
 	"tired",
-    "so-and-so",
 	"angry"];
 var types = [
     "alcoholic",
@@ -92,22 +91,33 @@ TYPES.addEventListener('change', function(type) {
 
 
 // For submission
-const DRINKNAME = document.querySelector('#drinkName')
+const DRINKNAME = document.querySelector('#drinkName');
+let selectedMood;
+let selectedType;
 
 FORM.addEventListener('submit', function(event) {
 	event.preventDefault();
-	let pItems = DRINKNAME.getElementsByTagName('p');
 	
-	let selectedMood = MOODS.value;
-	let selectedType = TYPES.value;
-	console.log(renderDrink(selectedType, selectedMood));
-	
-	if (pItems.length == 1) {
-		DRINKNAME.replaceChild(renderDrink(selectedType, selectedMood), pItems[0]);
-	} else {
-		DRINKNAME.appendChild(renderDrink(selectedType, selectedMood));
-	}
-	console.log(DRINKNAME);
+	selectedMood = MOODS.value;
+	selectedType = TYPES.value;
+});
+
+
+$('.submit').on('click', function(){
+	$("#insList").empty();
+	$('.instructions-list').empty();
+	$("#mesList").empty();
+	$("#drinkImg").empty();
+	$('.green').animate({ left: '-50px'},400, function(){
+		$('.blue').animate({ left: '0px'},400)
+	renderDrink(selectedType, selectedMood);
+	});//can put callback function after linear
+	$('.ingredients-box').fadeOut(400, function(){
+		$('.instructions-box').fadeIn(400);
+		$('.instructions-mini').fadeIn(400);
+	});
+	currentColor = "blue";
+
 });
 
 
