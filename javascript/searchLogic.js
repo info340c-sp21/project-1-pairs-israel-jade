@@ -93,7 +93,7 @@ TYPES.addEventListener('change', function(type) {
 
 // For submission
 const DRINKNAME = document.querySelector('#drinkName')
-/*
+
 FORM.addEventListener('submit', function(event) {
 	event.preventDefault();
 	let pItems = DRINKNAME.getElementsByTagName('p');
@@ -109,7 +109,25 @@ FORM.addEventListener('submit', function(event) {
 	}
 	console.log(DRINKNAME);
 });
-*/
+
+
+function randDrink() {
+	let drinkKeys = Object.keys(DRINKS);
+	let num = Math.floor(Math.random() * drinkKeys.length);
+	let drinkType = drinkKeys[num];
+	console.log(num + ' ' + drinkType);
+
+	num = Math.floor(Math.random() * DRINKS[drinkType].length)
+	if (drinkType == 'alcoholic' && num == 4) {
+		num = num - 1;
+	}
+
+	console.log(num);
+	console.log(DRINKS[drinkType][num].mood);
+    return renderDrink(drinkType, DRINKS[drinkType][num].mood);
+}
+console.log(randDrink());
+
 function renderDrink(drinkType, feeling) {
     if (drinkType == 'non-alcoholic') {
 		drinkType = 'nonAlcoholic';
