@@ -1,0 +1,11 @@
+type,mood,drink,author,link
+alcoholic,happy,Cuba Libre,The Spruce Eats,'https://www.thespruceeats.com/rum-and-coke-recipe-760560'
+alcoholic,sad,The Whiskey Sour,The Spruce Eats,'https://www.thespruceeats.com/whiskey-sour-recipe-761273
+alcoholic,excited,Blue Margarita,The Spruce Eats,'https://www.thespruceeats.com/blue-margarita-recipe-760849
+alcoholic,tired,Vodka Red Bull,Liquor.com,'https://www.liquor.com/recipes/vodka-red-bull/
+alcoholic,angry,'Uh oh, you should not be drinking alcohol! Please pick another mood or drink type',NA,'NA'
+nonAlcoholic,happy,Low-Calorie Blueberry Smoothie,The Spruce Eats,'https://www.thespruceeats.com/blueberry-smoothie-recipe-2238438'
+nonAlcoholic,sad,Chocolate Milk,The Spruce Eats,'https://www.thespruceeats.com/chocolate-milk-recipe-2355494'
+nonAlcoholic,excited,Fresh Watermelon Lemonade,The Spruce Eats,'https://www.thespruceeats.com/fresh-watermelon-lemonade-5071240'
+nonAlcoholic,tired,Chocolate Coffee Protein Shake,The Spruce Eats,'https://www.thespruceeats.com/chocolate-coffee-protein-shake-4031922'
+nonAlcoholic,angry,Earl Grey Tea,The Spruce Eats,'https://www.31daily.com/how-to-brew-earl-grey-tea/'
