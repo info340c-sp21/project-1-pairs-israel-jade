@@ -236,6 +236,22 @@ $(".martini-box").on('click', function(){
 	currentColor = "green";
 
 });
+$('.receipt').on('click',function(){
+		$('.blue').animate({ left: '-300px'},400, function(){
+			$('.purple').animate({ left: '0px'},400)
+			//API CALL TO INSTRUCTIONS NEEDS TO BE DONE BEFORE FADEIN
+
+		});//can put callback function after linear
+		$('.instructions-box').fadeOut(400, function(){
+			$('.cheers-box').fadeIn(400);
+			$('.results-mini').fadeIn(400);
+		});
+
+		currentColor = "purple";
+	});
+
+
+
 
 	//Right side panel functionality
 	$('.ingredients-mini').on('click',function(){
@@ -245,7 +261,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-150px'},400, function(){
+			$('.blue').animate({left: '-300px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -255,7 +271,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-150px'},400, function(){
+			$('.purple').animate({left: '-300px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -272,7 +288,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.green').animate({left: '-150px'},400, function(){
+			$('.green').animate({left: '-300px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -282,7 +298,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-150px'},400, function(){
+			$('.purple').animate({left: '-300px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -299,7 +315,7 @@ $(".martini-box").on('click', function(){
 			});
 
 
-			$('.green').animate({left: '-150px'},400, function(){
+			$('.green').animate({left: '-300px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		}
@@ -309,7 +325,7 @@ $(".martini-box").on('click', function(){
 				$('.cheers-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-150px'},400, function(){
+			$('.blue').animate({left: '-300px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		};
@@ -389,7 +405,7 @@ $('.random').on('click', function(){
     	$('.instructions-list').empty();
     	$("#mesList").empty();
     	$("#drinkImg").empty();
-		$('.green').animate({ left: '-0px'},400, function(){
+		$('.green').animate({ left: '-300px'},400, function(){
 			$('.blue').animate({ left: '0px'},400)
 		randomDrink();
 		});//can put callback function after linear
