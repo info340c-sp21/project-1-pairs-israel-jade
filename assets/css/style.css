@@ -924,13 +924,30 @@ h2{
 		font-size: 10pt;
 		margin-top: 20pt;
 	}
+	.instructions-list {
+		font-size: 15pt;
+		padding:15px 0 0 15px;
+	}
 	.random-centered{
 		text-align: center;
 		display:block;
 		margin: 19px auto;
 		margin-top: 130px;
 	}
+	.links{
+		margin-top:10px;
+		font-size: 15pt;
+	}
 	
+	.links-side-list{
+		list-style-type:disc;
+		color:navajowhite;
+		font-size: 15pt;
+		margin: 0px 0 0 10px;
+	}
+	.links-list {
+		font-size: 15pt;
+	}
 	.random-title{
 		font-family: 'Permanent Marker', cursive;
 		font-size: 15pt;
@@ -1048,7 +1065,7 @@ h2{
 	
 	#suggestion-form {
 		font-size: 10pt;
-		margin:1em;
+		margin-left: 0px;
 		height: 600px;
 	}
 	#sidebox {
@@ -1074,6 +1091,15 @@ h2{
 {
     label.main-title{
 		font-size: 15pt;
+	}
+	.links{
+		margin-top:10px;
+	}
+	
+	.links-side-list{
+		list-style-type:disc;
+		color:navajowhite;
+		margin: 10px 0 0 41px;
 	}
 	.drinkingchoices {
 		font-size: 15pt;

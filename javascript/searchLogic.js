@@ -11,7 +11,7 @@ const DRINKS = {
         {mood:'happy', drink:'Cuba Libre', author:'The Spruce Eats', link:'https://www.thespruceeats.com/rum-and-coke-recipe-760560'},
         {mood:'sad', drink:'The Whiskey Sour', author:'The Spruce Eats', link:'https://www.thespruceeats.com/whiskey-sour-recipe-761273'},
         {mood:'excited', drink:'Blue Margarita', author:'The Spruce Eats', link:'https://www.thespruceeats.com/blue-margarita-recipe-760849'},
-        {mood:'tired', drink:'Vodka Red Bull', author:'Liqour.com', link:'https://www.liquor.com/recipes/vodka-red-bull/'},
+        {mood:'tired', drink:'Vodka Red Bull', author:'Liqour. com', link:'https://www.liquor.com/recipes/vodka-red-bull/'},
         {mood:'angry', drink:'Uh oh, you should not be drinking alcohol! Please pick another mood or drink type.'}
     ],
     nonAlcoholic: [
