@@ -60,7 +60,6 @@ setChangeEvents(TYPES, ANSWERS);
 function setChangeEvents(options, listDestination) {
     options.addEventListener('change', function(option) {
         let listItems = listDestination.getElementsByTagName('li');
-        console.log(listItems);
         
         let select = option.target;
         let value = select.value;
@@ -160,7 +159,6 @@ function renderDrink(drinkType, feeling) {
     }
 
     MATCH.appendChild(match);
-    console.log(MATCH.textContent);
 }
 
 
@@ -170,7 +168,6 @@ function renderLink(drinkLink, drinkAuthor) {
     href.setAttribute('href', drinkLink);
     href.setAttribute('target', "_blank");
     href.textContent = drinkAuthor;
-    console.log(href);
     return href;
 }
 
