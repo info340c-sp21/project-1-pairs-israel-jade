@@ -796,11 +796,11 @@ h2{
 	100% {transform: translateY(0px);}
 }
 
-.measurements{
+.links{
 	margin-top:10px;
 }
 
-.measurements-side-list{
+.links-side-list{
 	list-style-type:disc;
 	color:navajowhite;
 	margin: 10px 0 0 41px;
@@ -1174,7 +1174,7 @@ h2{
 		position:absolute;
 		top: 400px;
 		left:20px;
-		height: 600px;
+		height: 300px;
 		font-size: 18pt;
 		width:150px;
 	}
