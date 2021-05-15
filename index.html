@@ -77,26 +77,26 @@
 				</div>
 
 			</div>
-			<div class="row">
+			<!-- <div class="row"> -->
 				<!--How to Do Section-->
 				<!-- Exact -->
-				<div class="col-lg-3">
+				<!-- <div class="col-lg-3">
 					<div class="howdothis exact-ing">
 						<h2>Exact Description</h2>
 						<p> </p>
 						<p></p>
 						<h3 class="ingredients-switcher exact-click">Feeling Lucky Today <div class="is-line1"></div><div class="is-line2"></div></h3>
-					</div>
+					</div> -->
 
 					<!-- Buy-the-rest -->
-					<div class="howdothis buy-the-rest">
+					<!-- <div class="howdothis buy-the-rest">
 						<h2>I'll go buy the rest.</h2>
 						<p></p>
 						<p></p>
 						<h3 class="ingredients-switcher buy-click">Exact Ingredients.<div class="is-line1"></div><div class="is-line2"></div></h3>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 
@@ -154,7 +154,7 @@
 			<div class="ingredients-side">
 				<div class ="title links">Link to recipe:</div>
 				<div class="sidebox">
-					<ul class='links-side-list' id="mesList"></ul>
+					<ul class='links-side-list' id="links-list"></ul>
 				</div>
 			</div><br>
 			<div class="suggestion-side">
@@ -162,17 +162,19 @@
 					<!-- new form for users to add suggestions-->
 					<form id="suggestion-form">
 						<label for="drinkSug">What's the name?</label><br>
-						<input type="text" id="drinkSug" name="drinkSug">
+						<input type="text" id="drinkSug" name="drinkSug" required>
 						<label for="moodSug">What mood does this fit?</label><br>
 						<select name="moodSug" id="moodSug">
-							<option disabled selected value>-- select a mood --</option>
+							<option disabled selected value required>-- select a mood --</option>
 						</select><br>
 						<label for="typeSug">What type of drink?</label><br>
 						<select name="typeSug" id="typeSug">
-							<option disabled selected value>-- select a type --</option>
+							<option disabled selected value required>-- select a type --</option>
 						</select><br>
+						<label for="linkSug">Copy + Paste link? [optional]</label><br>
+						<input type="url" name="linkSug" id="linkSug"><br>
 						<br>
-						<input type="submit" value="Submit" style="color: #202427;">
+						<input type="submit" class="submitSug" value="Submit" style="color: #202427;">
 					</form>
 			</div>
 		</aside>

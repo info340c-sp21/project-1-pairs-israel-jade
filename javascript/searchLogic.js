@@ -38,6 +38,9 @@ const TYPES = document.querySelector('#types');
 const ANSWERS = document.querySelector('#answer-list');
 const FORM = document.querySelector('form');
 
+const MATCH = document.querySelector('.instructions-list');
+const LINKS = document.querySelector('#links-list');
+
 const SUG_MOODS = document.querySelector('#moodSug');
 const SUG_TYPES = document.querySelector('#typeSug');
 const SUG_FORM = document.querySelector('#suggestion-form');
@@ -60,12 +63,13 @@ function setSelectOptions(subject, position) {
 
 
 // function to update left-sidebar with answers
-setChangeEvents(MOODS);
-setChangeEvents(TYPES);
+setChangeEvents(MOODS, ANSWERS);
+setChangeEvents(TYPES, ANSWERS);
 
-function setChangeEvents(options) {
+function setChangeEvents(options, listDestination) {
     options.addEventListener('change', function(option) {
-        let listItems = ANSWERS.getElementsByTagName('li');
+        let listItems = listDestination.getElementsByTagName('li');
+        console.log(listItems);
         
         let select = option.target;
         let value = select.value;
@@ -74,11 +78,13 @@ function setChangeEvents(options) {
         answer.textContent = value;
 
         if (listItems.length == 2 && options == MOODS) {
-            ANSWERS.replaceChild(answer, listItems[0]);
+            listDestination.replaceChild(answer, listItems[0]);
         } else if (listItems.length == 2 && options == TYPES) {
-            ANSWERS.replaceChild(answer, listItems[1]);
+            listDestination.replaceChild(answer, listItems[1]);
+        } else if (listItems.length == 1 && options == MATCH) {
+            listDestination.replaceChild(answer, listItems[0]);
         } else {
-            ANSWERS.appendChild(answer);
+            listDestination.appendChild(answer);
         }
     });
 }
@@ -88,6 +94,7 @@ function setChangeEvents(options) {
 const DRINKNAME = document.querySelector('#drinkName');
 let selectedMood;
 let selectedType;
+
 
 FORM.addEventListener('submit', function(event) {
 	event.preventDefault();
@@ -116,10 +123,11 @@ $('.submit').on('click', function(){
 
 
 // Functions to render a drink
+let drinkType;
 function randomDrink() {
 	let drinkKeys = Object.keys(DRINKS);
 	let num = Math.floor(Math.random() * drinkKeys.length);
-	let drinkType = drinkKeys[num];
+	drinkType = drinkKeys[num];
 	num = Math.floor(Math.random() * DRINKS[drinkType].length)
 	if (drinkType == 'alcoholic' && num == 4) {
 		num = num - 1;
@@ -128,13 +136,15 @@ function randomDrink() {
     return renderDrink(drinkType, DRINKS[drinkType][num].mood);
 }
 
+let drink;
+let link;
+let author;
+
 function renderDrink(drinkType, feeling) {
     if (drinkType == 'non-alcoholic') {
 		drinkType = 'nonAlcoholic';
 	}
 	let getType = DRINKS[drinkType];
-    let drink = '';
-    let link = '';
 
     let i = 0;
 
@@ -142,12 +152,32 @@ function renderDrink(drinkType, feeling) {
         if (getType[i].mood == feeling) {
             drink = getType[i].drink;
             link = getType[i].link;
+            author = getType[i].author;
         }
 		i++;
     });
+
 	let match = document.createElement('p');
 	//match.setAttribute('display', 'inline-block');
 	match.textContent = drink;
+    let newLink = renderLink(link, author);
 
-    document.querySelector('.instructions-list').appendChild(match);
+    if (LINKS.children.length == 1) {
+        LINKS.replaceChild(newLink, LINKS.children[0]);
+    } else {
+        LINKS.appendChild(renderLink(link, author));
+    }
+
+    MATCH.appendChild(match);
+    console.log(MATCH.textContent);
 }
+
+function renderLink(drinkLink, drinkAuthor) {
+    let href = document.createElement('a');
+    href.setAttribute('href', drinkLink);
+    href.setAttribute('target', "_blank");
+    href.textContent = drinkAuthor;
+    return href;
+}
+
+setChangeEvents(MATCH, LINKS);
