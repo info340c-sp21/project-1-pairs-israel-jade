@@ -107,8 +107,6 @@ $('.submit').on('click', function(){
 		$('.instructions-box').fadeIn(400);
 		$('.instructions-mini').fadeIn(400);
 	});
-	currentColor = "blue";
-
 });
 
 
@@ -172,6 +170,7 @@ function renderLink(drinkLink, drinkAuthor) {
     href.setAttribute('href', drinkLink);
     href.setAttribute('target', "_blank");
     href.textContent = drinkAuthor;
+    console.log(href);
     return href;
 }
 
@@ -199,19 +198,29 @@ SUG_FORM.addEventListener('submit', function(event) {
     sugDrink = SUG_DRINK.value;
 	sugMood = SUG_MOODS.value;
 	sugType = SUG_TYPES.value;
-    sugLink = SUG_LINKS.value;
+    if (SUG_LINKS.value != '') {
+        sugLink = SUG_LINKS.value;
+        console.log(sugLink);
+    } else {
+        sugLink = '';
+    }
+    renderSuggestions(sugDrink, sugMood, sugType, sugLink);
+    SUG_FORM.reset();
 });
 
-// $('.submitSug').on('click', function(){
-// 	renderSuggestions(sugDrink, sugMood, sugType, sugLink);
-// });
+const DRINKLIST = document.querySelector('.drink-side-list');
 
-// const DRINKLIST = document.querySelector('#drinkList');
+function renderSuggestions(enterName, enterMood, enterType, enterLink) {
+    if (enterLink != '') {
+        others = document.createElement('a');
+        others.href = renderLink(enterLink, enterName);
+        others.target = "_blank";
+    } else {
+        others = document.createElement('p');
+    }
 
-// function renderSuggestions(enterName, enterMood, enterType, enterLink) {
-//     let others = document.createElement('li');
+    others.innerHTML = enterMood + ' ' + enterType + ' = ' + enterName;
 
-//     let newLink = renderLink(enterLink, enterName);
-//     others.textContent = enterMood + ' ' + enterType + ' = ' + newLink;
-//     DRINKLIST.appendChild(others);
-// }
+    DRINKLIST.appendChild(others);
+    console.log(DRINKLIST.children);
+}
