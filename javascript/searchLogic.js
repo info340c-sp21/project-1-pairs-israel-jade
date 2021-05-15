@@ -93,10 +93,10 @@ TYPES.addEventListener('change', function(type) {
 
 // For submission
 const DRINKNAME = document.querySelector('#drinkName')
-/*
+
 FORM.addEventListener('submit', function(event) {
 	event.preventDefault();
-	let pItems = DRINKNAME.getElementsByTagName('p');
+	let pItems = DRINKNAME.getElementsByTagName('p'); 
 	
 	let selectedMood = MOODS.value;
 	let selectedType = TYPES.value;
@@ -109,7 +109,7 @@ FORM.addEventListener('submit', function(event) {
 	}
 	console.log(DRINKNAME);
 });
-*/
+
 function renderDrink(drinkType, feeling) {
     if (drinkType == 'non-alcoholic') {
 		drinkType = 'nonAlcoholic';

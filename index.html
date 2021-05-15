@@ -67,7 +67,7 @@
 							<option disabled selected value>-- select a type --</option>
 						</select><br>
 						<br>
-						<input type="submit" value="Submit" style="color: #202427;">
+						<button class="submit">Try Me!</button>
 					</form>
 					<!-- <div class='ingredients-choices'>
 						<ul class='choices'></ul>
@@ -112,7 +112,8 @@
 				</div>
 			</div>
 		</aside>
-
+		
+			
 
 <!-- Instructions UI-->
 		<!--Instructions Middle Box-->
@@ -131,7 +132,7 @@
 
 						<!--DISPLAY NONE, THEN FADE IN ONCE LAST STEP APPEARS-->
 						<img src='./assets/media/receipt_icon.png' class='receipt'>
-						<div class='close-tab'>Close your bar tab.</div>
+						<div class='close-tab'>We hope you love it!</div>
 					</div>
 				</div>
 				<!--How to Do Section-->
@@ -245,7 +246,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-50px'},400, function(){
+			$('.blue').animate({left: '-150px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -255,7 +256,7 @@ $(".martini-box").on('click', function(){
 				$('.ingredients-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-50px'},400, function(){
+			$('.purple').animate({left: '-150px'},400, function(){
 				$('.green').animate({left: '0px',},400);
 			});
 		}
@@ -272,7 +273,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.green').animate({left: '-50px'},400, function(){
+			$('.green').animate({left: '-150px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -282,7 +283,7 @@ $(".martini-box").on('click', function(){
 				$('.instructions-box').fadeIn(400);
 			});
 
-			$('.purple').animate({left: '-50px'},400, function(){
+			$('.purple').animate({left: '-150px'},400, function(){
 				$('.blue').animate({left: '0px',},400);
 			});
 		}
@@ -299,7 +300,7 @@ $(".martini-box").on('click', function(){
 			});
 
 
-			$('.green').animate({left: '-50px'},400, function(){
+			$('.green').animate({left: '-150px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		}
@@ -309,7 +310,7 @@ $(".martini-box").on('click', function(){
 				$('.cheers-box').fadeIn(400);
 			});
 
-			$('.blue').animate({left: '-50px'},400, function(){
+			$('.blue').animate({left: '-150px'},400, function(){
 				$('.purple').animate({left: '0px',},400);
 			});
 		};
@@ -389,7 +390,7 @@ $('.random').on('click', function(){
     	$('.instructions-list').empty();
     	$("#mesList").empty();
     	$("#drinkImg").empty();
-		$('.green').animate({ left: '-50px'},400, function(){
+		$('.green').animate({ left: '-0px'},400, function(){
 			$('.blue').animate({ left: '0px'},400)
 		randomDrink();
 		});//can put callback function after linear

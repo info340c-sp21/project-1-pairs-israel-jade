@@ -917,6 +917,159 @@ h2{
 }
 
 
+
+@media (min-width: 400px)
+{
+    label.main-title{
+		font-size: 10pt;
+		margin-top: 20pt;
+	}
+	.random-centered{
+		text-align: center;
+		display:block;
+		margin: 19px auto;
+		margin-top: 130px;
+	}
+	
+	.random-title{
+		font-family: 'Permanent Marker', cursive;
+		font-size: 15pt;
+		margin-right: 92px;
+		float:right;
+		margin-top: 80px;
+	}
+	
+	button.random{
+		margin-top: 15px;
+	}
+	.drinkingchoices {
+		font-size: 15pt;
+	}
+	header.head{
+		/*Display for debug*/
+		display: none;
+		/*background-color: rgba(32,36,39,0.7);*/
+		height: 150px;
+		width: 100;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 350px;
+		font-size:1 5pt;
+	}
+	.landing-text {
+		font-size: 10pt;
+	}
+
+	.sidebar{
+		position:fixed;
+		top:0;
+		left:0;
+		width:150px;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.green{
+		background-color: #292f33;
+		/*Display none for debug*/
+		/*display: none;*/
+		left:-160px;
+		color:#68b4fc;
+	}
+
+	.ingredients-side{
+		position:absolute;
+		top:60px;
+		left:10px;
+		font-size: 10pt;
+		width:149px;
+		height: 30px;
+	}
+
+	.sidebox{
+		font-family: 'Permanent Marker', cursive;
+		color:white;
+		font-size: 15pt;
+		background-color: #202427;
+		border-radius: 10px;
+		width:90%;
+		height: 100px;
+		margin-top: 3px;
+		margin-right: 3px; 
+		overflow:auto;
+
+	}
+	/*Ingredients List Generator*/
+	.ingredients-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 40px;
+		left: 160px;
+		width:75%;
+		/*Display block for debug*/
+		display: none;
+	}
+	.top-logo{
+		position: fixed;
+		top:0;
+		left: 180px;
+		font-size:15pt;
+	}
+
+	.blue{
+		background-color: #292f33;
+		left:-300px;
+		width: 160px;
+		font-size:40pt;
+		color:#d185d6;
+	
+	}
+	.instructions-box{
+		position:relative;
+		margin:0;
+		padding:0;
+		top: 5px;
+		left: 180px;
+		width:40%;
+		/*Display none for debug*/
+		display: none;
+	}
+	.suggestion-side {
+		position:absolute;
+		top: 400px;
+		left:20px;
+		height: 600px;
+		font-size: 18pt;
+		width:150px;
+	}
+	
+	#suggestion-form {
+		font-size: 10pt;
+		margin:1em;
+		height: 600px;
+	}
+	#sidebox {
+		height:600px;
+	}
+	.sidebox {
+		height: 300px;
+	}
+	.howdothis{
+		margin-top: 30px;
+		padding:20px;
+		background-color:#292f33;
+		transition: 0.5s;
+		border-radius: 15px;
+		margin-right: 50px;
+		width: 195px;
+	}
+	.howdothis.h2{
+		font-size: 15pt;
+	}
+}
 @media (min-width: 598px)
 {
     label.main-title{
