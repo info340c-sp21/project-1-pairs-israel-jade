@@ -38,19 +38,10 @@ const TYPES = document.querySelector('#types');
 const ANSWERS = document.querySelector('#answer-list');
 const FORM = document.querySelector('form');
 
-const MATCH = document.querySelector('.instructions-list');
-const LINKS = document.querySelector('#links-list');
-
-const SUG_MOODS = document.querySelector('#moodSug');
-const SUG_TYPES = document.querySelector('#typeSug');
-const SUG_FORM = document.querySelector('#suggestion-form');
-
 
 // function to set all select options
 setSelectOptions(moods, MOODS);
 setSelectOptions(types, TYPES);
-setSelectOptions(moods, SUG_MOODS);
-setSelectOptions(types, SUG_TYPES);
 
 function setSelectOptions(subject, position) {
 	subject.forEach(function(sub) {
@@ -91,10 +82,8 @@ function setChangeEvents(options, listDestination) {
 
 
 // For submission
-const DRINKNAME = document.querySelector('#drinkName');
 let selectedMood;
 let selectedType;
-
 
 FORM.addEventListener('submit', function(event) {
 	event.preventDefault();
@@ -104,6 +93,7 @@ FORM.addEventListener('submit', function(event) {
 });
 
 
+// Takes user to matching page
 $('.submit').on('click', function(){
 	$("#insList").empty();
 	$('.instructions-list').empty();
@@ -123,7 +113,10 @@ $('.submit').on('click', function(){
 
 
 // Functions to render a drink
+const MATCH = document.querySelector('.instructions-list');
+const LINKS = document.querySelector('#links-list');
 let drinkType;
+
 function randomDrink() {
 	let drinkKeys = Object.keys(DRINKS);
 	let num = Math.floor(Math.random() * drinkKeys.length);
@@ -172,6 +165,8 @@ function renderDrink(drinkType, feeling) {
     console.log(MATCH.textContent);
 }
 
+
+// Functions to add drink recipe link to list
 function renderLink(drinkLink, drinkAuthor) {
     let href = document.createElement('a');
     href.setAttribute('href', drinkLink);
@@ -181,3 +176,42 @@ function renderLink(drinkLink, drinkAuthor) {
 }
 
 setChangeEvents(MATCH, LINKS);
+
+
+// Add suggestion to list of other options
+const SUG_DRINK = document.querySelector('#drinkSug');
+const SUG_MOODS = document.querySelector('#moodSug');
+const SUG_TYPES = document.querySelector('#typeSug');
+const SUG_LINKS = document.querySelector('#linkSug');
+const SUG_FORM = document.querySelector('#suggestion-form');
+
+let sugDrink;
+let sugMood;
+let sugType;
+let sugLink;
+
+setSelectOptions(moods, SUG_MOODS);
+setSelectOptions(types, SUG_TYPES);
+
+SUG_FORM.addEventListener('submit', function(event) {
+	event.preventDefault();
+	
+    sugDrink = SUG_DRINK.value;
+	sugMood = SUG_MOODS.value;
+	sugType = SUG_TYPES.value;
+    sugLink = SUG_LINKS.value;
+});
+
+// $('.submitSug').on('click', function(){
+// 	renderSuggestions(sugDrink, sugMood, sugType, sugLink);
+// });
+
+// const DRINKLIST = document.querySelector('#drinkList');
+
+// function renderSuggestions(enterName, enterMood, enterType, enterLink) {
+//     let others = document.createElement('li');
+
+//     let newLink = renderLink(enterLink, enterName);
+//     others.textContent = enterMood + ' ' + enterType + ' = ' + newLink;
+//     DRINKLIST.appendChild(others);
+// }
